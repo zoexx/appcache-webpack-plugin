@@ -71,6 +71,7 @@ export default class AppCachePlugin {
 
     compiler.plugin('emit', (compilation, callback) => {
       const appCache = new AppCache(this.cache, this.network, this.fallback, this.settings, compilation.hash, this.comment);
+          publicPath = publicPath.replace( /\[hash\]/ig , compilation.hash );
       Object.keys(compilation.assets)
         .filter(asset => !this.exclude.some(pattern => pattern.test(asset)))
         .forEach(asset => appCache.addAsset(publicPath + asset));

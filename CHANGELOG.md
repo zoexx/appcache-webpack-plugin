@@ -1,3 +1,8 @@
+## 1.3.1 
+
+* 根据业务需求 增加了对output path 中hash的支持
+* 请使用原版本 [https://github.com/lettertwo/appcache-webpack-plugin](https://github.com/lettertwo/appcache-webpack-plugin)
+
 ## 1.3.0
 
 * Include support for webpack 2
