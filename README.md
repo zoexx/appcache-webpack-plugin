@@ -1,5 +1,7 @@
 # Application Cache plugin for Webpack
 
+## * 此版本修改了原版中 publicPath 拼接部分，支持[hash]的引用，并不会同步更新版本，请使用[原版](https://www.npmjs.com/package/appcache-webpack-plugin)
+
 ## Usage
 
 ```javascript

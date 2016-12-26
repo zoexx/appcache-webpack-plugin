@@ -67,7 +67,7 @@ export default class AppCachePlugin {
 
   apply(compiler) {
     const {options: {output: outputOptions = {}} = {}} = compiler;
-    const {publicPath = ''} = outputOptions;
+    var {publicPath = ''} = outputOptions;
 
     compiler.plugin('emit', (compilation, callback) => {
       const appCache = new AppCache(this.cache, this.network, this.fallback, this.settings, compilation.hash, this.comment);
